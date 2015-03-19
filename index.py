@@ -44,3 +44,12 @@ class HomePageHandler(BaseHandler):
 
 from bae.core.wsgi import WSGIApplication
 application = WSGIApplication(Application())
+
+# import wsgiref.simple_server
+# def main():
+#     wsgi_app = tornado.wsgi.WSGIAdapter(Application())
+#     server = wsgiref.simple_server.make_server('', 8888, wsgi_app)
+#     server.serve_forever()
+#
+# if __name__ == "__main__":
+#     main()
